@@ -1,0 +1,299 @@
+/* 
+    TTF: True Type Font
+    OTF: Open Type Font
+    EDT: Embedded Type Font
+    WOFF: Web Open Font
+    WOFF2: Web Open Font 2
+    SVG: Scalable Vector Graphic
+*/
+/* @font-face {
+    font-family: pappins;
+    src:
+        /* url(../webfonts/poppins/Poppins-Black.ttf), */
+        /* url(../webfonts/poppins/Poppins-BlackItalic.ttf), */
+        /* url(../webfonts/poppins/Poppins-Bold.ttf), */
+        /* url(../webfonts/poppins/Poppins-BoldItalic.ttf), */
+        /* url(../webfonts/poppins/Poppins-ExtraBold.ttf), */
+        /* url(../webfonts/poppins/Poppins-ExtraBoldItalic.ttf), */
+        /* url(../webfonts/poppins/Poppins-ExtraLight.ttf), */
+        /* url(../webfonts/poppins/Poppins-ExtraLightItalic.ttf), */
+        /* url(../webfonts/poppins/Poppins-Italic.ttf), */
+        /* url(../webfonts/poppins/Poppins-Light.ttf), */
+        /* url(../webfonts/poppins/Poppins-LightItalic.ttf), */
+        /* url(../webfonts/poppins/Poppins-Medium.ttf), */
+        /* url(../webfonts/poppins/Poppins-MediumItalic.ttf), */
+        /* url(../webfonts/poppins/Poppins-Regular.ttf), */
+        /* url(../webfonts/poppins/Poppins-SemiBold.ttf), */
+        /* url(../webfonts/poppins/Poppins-SemiBoldItalic.ttf), */
+        /* url(../webfonts/poppins/Poppins-Thin.ttf), */
+        /* url(../webfonts/poppins/Poppins-ThinItalic.ttf); */
+/* } */
+
+/* Font Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Start Global CSS */
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/* End Global CSS */
+
+/* Start Navbar CSS */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+    background-color: #f0f0f0;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+}
+
+header .logo {
+    text-decoration: none;
+    color: #3a6cf4;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 700;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #3a6cf4;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+}
+
+header nav a:hover {
+    color: #601cfc;
+}
+
+/* End Navbar CSS */
+
+/* Start Section Main */
+section {
+    padding: 100px 200px;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+
+    background-image: url(../images/background.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.main h2 {
+    color: white;
+    font-weight: 500;
+    font-size: 1.4em;
+
+}
+
+.main h2 span {
+    color: #4e9eff;
+    font-weight: 600;
+    font-size: 2.7em;
+    display: inline-block;
+    margin-top: 1px;
+    
+}
+
+.main h3 {
+    color: white;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.main .main-btn {
+    color: white;
+    background-color: #4e9eff;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    display: inline-block;
+    margin-bottom: 40px;
+    padding: 0.9375em 2.1875em;
+    transition: 0.7s ease;
+}
+
+.main .main-btn:hover {
+    background-color: #0a49f6;
+    transform: scale(1.1);
+}
+
+.social-icon a {
+    color: white;
+    font-size: 1.7em;
+    padding-right: 30px;
+}
+
+/* End Section Main */
+
+/* Start Section Services */
+
+.title {
+    /* display: flex;
+    justify-content: center; */
+    text-align: center;
+    color: #3a6cf4;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cards .content .card {
+    width: calc(100% / 3 - 30px);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    margin: 15px;
+    padding: 25px;
+    border-radius: 10px;
+    transition-duration: 0.7s;
+    transition-timing-function: ease;
+    text-align: center;
+}
+
+.cards .content .card:hover {
+    transform: scale(1.1);
+}
+
+.cards .content .card .icon {
+    color: #3a6cf4;
+    font-size: 8em;
+}
+
+.cards .content .card .info h3 {
+    color: #3a6cf4;
+    font-size: 1.1em;
+    font-weight: 700;
+    margin: 10px;
+}
+
+/* End Section Services */
+
+/* Start Section Projects */
+
+.projects {
+    background-color: #000016;
+}
+
+.projects .content {
+    margin-top: 30px;
+}
+
+.projects .content .project-card {
+    background-color: #fff;
+    border: 1px solid white;
+    min-height: 14em;
+    width: calc(100% / 3 - 40px);
+    overflow: hidden;
+    border-radius: 4px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+
+.projects .content .project-card:hover {
+    transform: scale(1.1);
+}
+
+.project-img img {
+    width: 100%;
+}
+
+.project-img img:hover {
+    opacity: 0.9;
+}
+
+.project-info {
+    padding: 1em;
+}
+
+.project-category {
+    color: black;
+    font-size: 0.8em;
+}
+
+.project-title {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-weight: 800;
+
+}
+
+.project-title a {
+    text-decoration: none;
+    color: #3a6cf4;
+}
+
+.project-title a:hover {
+    color: #601cfc;
+}
+
+
+/* End Section Projects */
+
+
+/* Start Section Contant */
+.contact .icon{
+    font-size: 4.5em !important;
+}
+
+.contact .info h3 {
+    color: #000 !important;
+}
+
+.contact .info p {
+    font-size: 1.2em;
+}
+
+/* End Section Contant */
+
+/* Start Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #000016;
+    color: white;
+    padding: 2em;
+}
+
+footer p {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+footer p span {
+    color: #3a6cf4;
+}
+
+footer .social-icon a {
+    font-size: 1.3em;
+}
+/* End Footer */
+
